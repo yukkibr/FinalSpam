@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8998325249251546451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3579797014991925354}
+  - component: {fileID: 6435288707119091980}
+  m_Layer: 0
+  m_Name: SpawnPoint_AviaoDDOS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3579797014991925354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998325249251546451}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6435288707119091980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998325249251546451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b212df165e5a7c845aef857dad46942e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FinalSpam.Enemies.EnemySpawnPoint
+  enemyPrefab: {fileID: 6642507693292330812, guid: d2320eb06f056f741bc04fb2a5ede319, type: 3}
+  spawnOnStart: 1
+  maxTotalSpawns: 0
+  maxAlive: 1
+  spawnInterval: 14
+  positionRandomRadius: 0
+  orientToPlayerOnSpawn: 1
+  minimumPlayerDistance: 2
+  enableChaseForSpawnedSoldiers: 1
+  enableGroundChaseWithoutNavMesh: 1
+  enableFlightForSpawnedAircraft: 1
+  snapGroundEnemiesToSurface: 1
+  groundProbeHeight: 8
+  groundProbeDepth: 30
+  drawSpawnGizmos: 1
